@@ -1,12 +1,90 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>js</title>
+    <title>JavaScriptの基本構文と特徴</title>
     <link rel="stylesheet" href="main.css">
 </head>
+
 <body>
-    <h1>js説明制作中</h1>
+    <header>
+        <h1 class="title1">JavaScriptの基本構文と特徴</h1>
+    </header>
+
+    <section>
+        <h2>JavaScriptとは？</h2>
+        <p>JavaScriptは、Webページに動的な機能を追加するために使用されるプログラミング言語です。主にクライアントサイドで使用されますが、Node.jsを使うことでサーバーサイドでも利用できます。JavaScriptは、イベントの処理、ユーザーインターフェイスの操作、Web APIとの通信など、さまざまな用途に使われます。</p>
+    </section>
+
+    <section>
+        <h2>基本的な構文</h2>
+        <p>JavaScriptにはいくつかの基本的な構文があります。これらは他のプログラミング言語にも共通するものが多く、習得することでさまざまなプログラムを記述することができます。</p>
+
+        <h3>1. 変数の宣言</h3>
+        <p>変数はデータを格納するための入れ物です。JavaScriptでは、<code>var</code>、<code>let</code>、<code>const</code>を使って変数を宣言します。</p>
+        <div class="code-block">
+            <button class="copy-btn">コピー</button>
+        </div>
+
+        <pre><code>// varを使った変数宣言
+var message = "こんにちは、JavaScript!";
+
+// letを使った変数宣言
+let count = 10;
+
+// constを使った定数の宣言
+const pi = 3.14159;</code></pre>
+
+        <h3>2. データ型</h3>
+        <p>JavaScriptのデータ型には、<code>string</code>（文字列）、<code>number</code>（数値）、<code>boolean</code>（真偽値）、<code>object</code>（オブジェクト）、<code>undefined</code>（未定義）、<code>null</code>（無）などがあります。</p>
+
+        <h3>3. 条件分岐</h3>
+        <p>条件分岐は、特定の条件が満たされた場合に異なるコードを実行するために使われます。<code>if</code>文と<code>else</code>文がよく使われます。</p>
+        <pre><code>let age = 20;
+
+if (age >= 18) {
+    console.log("成人です。");
+} else {
+    console.log("未成年です。");
+}</code></pre>
+
+        <h3>4. 繰り返し処理</h3>
+        <p>繰り返し処理は、同じコードを複数回実行するために使用されます。<code>for</code>ループや<code>while</code>ループが一般的です。</p>
+        <pre><code>for (let i = 0; i < 5; i++) {
+    console.log("ループ番号: " + i);
+}</code></pre>
+
+        <h3>5. 関数</h3>
+        <p>関数は、特定のタスクを実行するための再利用可能なブロックです。<code>function</code>キーワードを使って関数を定義します。</p>
+        <pre><code>function greet(name) {
+    return "こんにちは、" + name + "!";
+}
+
+console.log(greet("太郎"));</code></pre>
+
+        <h3>6. オブジェクトと配列</h3>
+        <p>JavaScriptでは、オブジェクトと配列を使って複数のデータをまとめて管理することができます。</p>
+        <pre><code>// オブジェクト
+let person = {
+    name: "花子",
+    age: 25,
+    greet: function() {
+        console.log("こんにちは、" + this.name + "です。");
+    }
+};
+
+// 配列
+let fruits = ["りんご", "バナナ", "オレンジ"];
+
+console.log(person.name);
+person.greet();
+
+console.log(fruits[0]);</code></pre>
+    </section>
+
+    <script src="script.js"></script>
 </body>
+
 </html>

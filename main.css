@@ -1,0 +1,143 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #340C3A;
+    color: #c9fbff;
+}
+
+header {
+    background-color: #EFDBF5;
+    color: #340C3A;
+    text-align: center;
+}
+
+
+code {
+    font-family: Consolas, 'Courier New', monospace;
+}
+
+
+
+h1 {
+    font-size: 150%;
+    background: #ffbbfa;/*背景色*/
+    padding: 0.5em;/*文字まわり（上下左右）の余白*/
+  }
+
+h2{
+    font-size: 100%;
+}
+
+h3{
+    font-size: 100%;
+}
+
+
+/* pre {
+    background-color: #ffffff;
+    color: #000000;
+    overflow-x: auto;
+}
+
+
+.code-block {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.copy-btn {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    padding: 5px 10px;
+    font-size: 12px;
+    cursor: pointer;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 3px;
+}
+ */
+
+/* 基本的なコードブロックのスタイル */
+pre {
+    background-color: #282c34;
+    color: #abb2bf;
+    padding: 16px;
+    overflow-x: auto;
+    border-radius: 5px;
+    font-size: 14px;
+    line-height: 1.5;
+    font-family: 'Courier New', Courier, monospace;
+    position: relative;
+}
+
+/* コピーボタンのスタイル */
+.copy-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 4px 8px;
+    background-color: #61dafb;
+    color: #282c34;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 12px;
+    display: none;
+}
+
+/* コードブロックがホバーされたときにコピーボタンを表示 */
+pre:hover .copy-btn {
+    display: block;
+}
+
+
+
+
+/* スマートフォン縦 (0-480px) */
+@media only screen and (max-width: 480px) {
+    body{
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    
+h1 {
+    font-size: 120% !important;
+  }
+
+}
+
+/* スマートフォン横 (480-670px) */
+@media only screen and (min-width: 481px) and (max-width: 670px) {
+    body{
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+}
+
+/* タブレット (670-960px) */
+@media only screen and (min-width: 671px) and (max-width: 960px){
+    body{
+        padding-left: 15%;
+        padding-right: 15%;
+    }
+}
+
+/* ノートPC (960-1280px) */
+@media only screen and (min-width: 961px) and (max-width: 1280px){
+    body{
+        padding-left: 15%;
+        padding-right: 15%;
+    }
+}
+
+/* モニター等 (1280px以上) */
+@media only screen and (min-width: 1281px){
+    body{
+        padding-left: 20%;
+        padding-right: 20%;
+    }
+}
+
+
