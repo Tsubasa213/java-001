@@ -1,8 +1,12 @@
-/* .kiwi-maru-regular {
-    font-family: "Kiwi Maru", serif;
-    font-weight: 400;
-    font-style: normal;
-} */
+.logo{
+    width: 130px;
+    clip-path: ellipse(40% 45% at 50% 50%);
+    margin-left: auto; /* 左側の余白を自動にして右揃えにします */
+    margin-right: 0;   /* 右側の余白を0に設定します */
+    vertical-align: middle; /* 垂直方向の揃えを中央に設定 */
+    margin-left: 15px; 
+    /* display: block; */
+}
 
 body {
     font-family: Arial, sans-serif;
@@ -35,6 +39,7 @@ h1 {
 
 h2{
     font-size: 130%;
+    vertical-align: middle; 
 }
 
 h3{
