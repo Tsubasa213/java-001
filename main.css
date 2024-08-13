@@ -8,6 +8,21 @@
     /* display: block; */
 }
 
+.motion {
+    width: 50%;
+    height: auto; /* 高さを自動にして中央揃えに影響しないようにします */
+    margin: 0 auto; /* 上下のマージンを0にし、左右のマージンを自動で設定して中央揃えにします */
+    display: block; /* ブロックレベル要素として表示します */
+}
+
+
+
+.link{
+    text-align: right;
+    font-size: 200%;
+    display: block;
+}
+
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
@@ -16,6 +31,7 @@ body {
     font-family: "Kiwi Maru", serif;
     font-weight: 400;
     font-style: normal;
+    display: block;
 }
 
 header {
@@ -28,7 +44,6 @@ header {
 code {
     font-family: Consolas, 'Courier New', monospace;
 }
-
 
 
 h1 {
@@ -52,32 +67,9 @@ a{
 
 .end{
     text-align: right;
-}
-/* pre {
-    background-color: #ffffff;
-    color: #000000;
-    overflow-x: auto;
+    font-size: 140%;
 }
 
-
-.code-block {
-    position: relative;
-    margin-bottom: 20px;
-}
-
-.copy-btn {
-    position: absolute;
-    top: 5px;
-    right: 5px;
-    padding: 5px 10px;
-    font-size: 12px;
-    cursor: pointer;
-    background-color: #007bff;
-    color: white;
-    border: none;
-    border-radius: 3px;
-}
- */
 
 /* 基本的なコードブロックのスタイル */
 pre {
