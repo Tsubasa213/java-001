@@ -32,7 +32,13 @@ h3{
     font-size: 100%;
 }
 
+a{
+    color: #ffbbfa;
+}
 
+.end{
+    text-align: right;
+}
 /* pre {
     background-color: #ffffff;
     color: #000000;
@@ -62,7 +68,7 @@ h3{
 /* 基本的なコードブロックのスタイル */
 pre {
     background-color: #282c34;
-    color: #abb2bf;
+    color: #c6cede;
     padding: 16px;
     overflow-x: auto;
     border-radius: 5px;
@@ -71,6 +77,8 @@ pre {
     font-family: 'Courier New', Courier, monospace;
     position: relative;
 }
+
+
 
 /* コピーボタンのスタイル */
 .copy-btn {
