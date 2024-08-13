@@ -1,11 +1,15 @@
 <!DOCTYPE html>
 <html lang="ja">
 
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JavaScriptの基本構文と特徴</title>
     <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/styles/vs.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
 </head>
 
 <body>
@@ -90,22 +94,21 @@ console.log(fruits[0]);</code></pre>
     </section>
 
     <section>
-        <h2>追加の構文と機能</h2>
 
-        <h3>1. テンプレートリテラル</h3>
+        <h3>7. テンプレートリテラル</h3>
         <p>テンプレートリテラルを使用すると、文字列内に変数や式を簡単に埋め込むことができます。<code>バッククォート (`)</code>を使います。</p>
         <pre><code>let name = "太郎";
 let greeting = `こんにちは、${name}さん！`;
 console.log(greeting);</code></pre>
 
-        <h3>2. 短絡評価</h3>
+        <h3>8. 短絡評価</h3>
         <p>短絡評価は、論理演算子を使って簡単な条件をチェックし、最初の真または偽の値を返します。</p>
         <pre><code>let user = null;
 let defaultUser = "ゲスト";
 let name = user || defaultUser;
 console.log(name); // "ゲスト" と表示される</code></pre>
 
-        <h3>3. 配列メソッド</h3>
+        <h3>9. 配列メソッド</h3>
         <p>JavaScriptには、配列を操作するためのさまざまなメソッドがあります。例えば、<code>map()</code>、<code>filter()</code>、<code>reduce()</code>などがあります。</p>
         <ul>
             <li><code>map()</code>: 各要素に対して関数を適用して新しい配列を返します。</li>
@@ -130,12 +133,12 @@ let sum = numbers.reduce(function(total, num) {
 console.log(sum); // 15</code></pre>
         </ul>
 
-        <h3>4. DOM操作</h3>
+        <h3>10. DOM操作</h3>
         <p>JavaScriptを使用して、DOM（Document Object Model）を操作することができます。これにより、HTML要素を動的に追加、削除、変更することが可能です。</p>
         <pre><code>let element = document.getElementById("myElement");
 element.textContent = "新しいテキスト";</code></pre>
 
-        <h3>5. イベント処理</h3>
+        <h3>11. イベント処理</h3>
         <p>JavaScriptを使用して、ユーザーの操作に応じてイベントを処理することができます。例えば、ボタンクリックやマウスオーバーなどのイベントを処理することができます。</p>
         <pre><code>let button = document.getElementById("myButton");
 button.addEventListener("click", function() {
